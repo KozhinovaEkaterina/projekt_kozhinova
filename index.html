@@ -1,24 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Курс_по_фотографированию</title>
+    <title>Курс по фотографированию</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-    <header>
-        <img src="images/логотип.jpg" alt="">
-        <img src="images/логотип.png" alt="логотип"  width="100" height="100">
-        <nav>
-        
-           <ul>
-                <li><a href="#"></a>Главная </li>
-                <li><a href="#"></a> О нас </li>
-            </ul>
-        <nav> 
-            <button>кнопка</button>
-            </header>
-            </main>
-            
+
+<body class="body">
+
+    <header class="header">
+        <div class="header__content">
+            <img class="header__logo" src="images/логотип.jpg" alt="Логотип" width="100" height="100">
+            <nav class="header__nav">
+                <input type="search" id="site-search" name="q" />
+                <button class="main__button">Найти</button>
+            </nav>
+            <h1 class="h1"> Курс по фотографированию</h1>
+        </div>
+        <nav class="header__nav">
+            <a href="#main">Главная</a>
+            <a href="#why-course">Для чего курс</a>
+            <a href="#about us">О нас </a>
+            <a href="#teacher">Преподаватели</a>
+            <a href="#catalog of other courses">Каталог других курсов</a>
+            <a href="#reviews">Отзывы</a>
+        </nav>
+        <div class="header__buttons">
+            <h1 style="text-decoration: none;color:#3b3b3a;"></h1>
+            <a class="main__button" href="">Регистрация</a>
+            <a class="main__button" href="">Войти</a>
+            <a class="main__button" href="">Купить курс</a>
+            <a class="main__button" href="">Настройки</a>
+            <a class="main__button" href="">Тех. поддержка</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="why-course" class="main__section">
+            <h2 class="h2">Для чего нужен этот курс?</h2>
+            <p class="p">
+            </p>Наш курс предоставляет уникальную возможность освоить курсы по фотографированию.
+            </br>Образовательный курс направлен на формирование у обучающихся знаний об:
+            </br>1. Основах знаниях профессионального фотоаппарата;
+            </br> 2. Основах настраивания света в фотостудиях.
+            </br> 3. Основах настройки фотоаппарата, для его дальнейшей работы
+            </br> 4. Основах находить и уметь составить композицию к фотозоне
+            </p>
+        </section>
+
+        <section id="reviews" class="main__section">
+            <div></br></div>
+            <h2 class="h2">Отзывы</h2>
+            <div class="reviews__container">
+                <div class="review">
+                    <img class="review__img" src="images/i (2).webp" alt="Фото пользователя">
+                    <div class="review__text">
+                        <p class="p">
+                            "Этот курс просто супер! Я начинающий фотограф, и благодаря этим
+                            курсам я стал быстрее ловить кадры с людьми, с природой" - Иван
+                        </p>
+                    </div>
+                </div>
+                <div class="review">
+                    <img class="review__img" src="images/i.webp" alt="Фото пользователя">
+                    <div class="review__text">
+                        <p class="p">
+                            "Очень довольна обучением! Преподаватели профессионалы, а подача материала очень доступная.
+                            Рекомендую всем! Присоединятейсь!" - Мария
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="why-course" class="main__section">
+            <h2 class="h2">Наша компания находится: республика Марий Эл, город Йошкар Ола, улица Комсомольская</h2>
+            <p class="p">
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1065.8558792049662!2d47.89535322979569!3d56.636845641109886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1739367708172!5m2!1sru!2sru"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            <section id="faq" class="main__section">
+                <h2 class="h2">Часто задаваемые вопросы:</h2></br>
+                <div class="faq__container">
+                    <div class="faq__item">
+                        <p class="p">1.Как проходит обучение?
+                        <p class="p">~Обучение проходит онлайн.
+                        <div class="faq__item">
+                            <p class="p">2.Есть ли возможность получить сертификат?</p>
+                            <p class="p">~Да, по окончании курса выдается сертификат.</p>
+                            <p class="p">3.Сколько стоят курсы?
+                            <p class="p">~Не дорого,в зависимости от категории.
+                        </div>
+            </section>
+    </main>
+    </br>Все новости</a>
+    <h3 class="puzzleTtl">Новости центров подготовки</h3>
+
+    <footer class="footer">
+        <div class="footer__content">
+            <h3 class="h3">Информация о нас</h3>
+            <p class="p">Email: info@fotoshopru.com</p>
+            <p class="p">Телефон: +7-(987)-139-3333</p>
+        </div>
+    </footer>
+
 </body>
+
 </html>

@@ -1,0 +1,93 @@
+/*----------------------------------------------------
+        Стилизация <header>
+----------------------------------------------------*/
+
+.header {
+    text-align: left;
+    background-color: rgba(202, 155, 1, 0.692);
+    box-shadow: 0 5px 15px rgb(8, 8, 8);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    margin-right: 20px;
+    max-width: 100px;
+    height: auto;
+
+}
+
+.header__content h1 {
+    font-family: 'Ebbe', 'Times New Roman', sans-serif;
+    font-size: 2.2em;
+    margin: 0;
+    flex: 1;
+    text-align: right;
+    left: 12%;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.753);
+    color: #180036e5;
+}
+
+.header__nav {
+    position: right;
+    background-color: #6b009c;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgb(79, 0, 119);
+}
+
+.header__nav a {
+    position: right;
+    text-align: right;
+    font-family: 'Ebbe', 'Georgia' 'Times New Roman', Times, serif, sans-serif;
+    font-size: 1em;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgba(248, 239, 239, 0.795);
+    font-weight: bold;
+}
+
+.header__nav a:hover {
+    color: rgba(38, 0, 255, 0.829);
+}
+
+@media (max-width: 800px) {
+    .header__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__nav {
+        margin: 10px 0;
+    }
+
+    .header__buttons {
+        justify-content: center;
+    }
+
+    .actions__video_text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions__video {
+        padding-right: 0;
+        max-width: 100%;
+    }
+
+    .actions__comp_text {
+        max-width: 100%;
+    }
+}
